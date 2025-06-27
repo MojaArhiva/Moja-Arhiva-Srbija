@@ -9,9 +9,10 @@ st.image("assets/logo.png", width=150)
 st.title("📂 Moja Arhiva")
 st.markdown("Dobrodošli! Ovde možete sačuvati i organizovati sve vaše važne dokumente.")
 
-# Menu latéral avec catégories
+# Menu latéral mis à jour avec nouvelle catégorie
 menu = [
     "📁 Lična dokumenta",
+    "🪪 Lična karta i pasoš",
     "🏡 Nekretnine i stanovanje",
     "🚗 Vozila",
     "📚 Obrazovanje",
@@ -20,9 +21,10 @@ menu = [
 ]
 choice = st.sidebar.selectbox("Izaberite kategoriju", menu)
 
-# Création d'un dossier spécifique par catégorie
+# Dictionnaire des dossiers associés
 category_folders = {
     "📁 Lična dokumenta": "personal_docs",
+    "🪪 Lična karta i pasoš": "id_passport_docs",
     "🏡 Nekretnine i stanovanje": "housing_docs",
     "🚗 Vozila": "vehicle_docs",
     "📚 Obrazovanje": "education_docs",
